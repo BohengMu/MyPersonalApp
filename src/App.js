@@ -1,9 +1,17 @@
 import MyNavBar from './components/NavBar'
+import Tutorial from './components/Tutorial'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <MyNavBar />
+    <div>
+      <MyNavBar />
+      <div className='container'>
+      <Tutorial />
+      </div>
+    </div>
+    
+      
   );
 }
 
