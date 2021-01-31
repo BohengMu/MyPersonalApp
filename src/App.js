@@ -1,5 +1,8 @@
 import MyNavBar from './components/NavBar'
-import Tutorial from './components/Tutorial'
+import {Header, Footer} from './components/Tutorial'
+import Greeting from './components/Greeting'
+import ToDoItem from './components/ToDoItem'
+import ToDoList from './components/ToDoList'
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
@@ -7,8 +10,11 @@ function App() {
     <div>
       <MyNavBar />
       <div className='container'>
-      <Tutorial />
+      <Greeting />
+      <Header />
       </div>
+      <ToDoList />
+      <Footer />
     </div>
     
       

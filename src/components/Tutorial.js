@@ -1,9 +1,17 @@
 import React from "react"
 
-function Tutorial(){
+function Header(){
     return(
         <h1 className='text-light'>hello</h1>
     )
 }
 
-export default Tutorial;
+function Footer(){
+    return(
+        <div className='text-light'>
+            <p>This is a footer</p>
+        </div>
+    )
+}
+
+export {Header, Footer};

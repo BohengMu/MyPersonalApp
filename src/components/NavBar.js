@@ -1,9 +1,11 @@
 import React from "react"
 
 function MyNavBar(){
+  const time=new Date().toLocaleTimeString();
     return(
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <a className="navbar-brand" href="#">Boheng</a>
+      <li id='time-small' className='navbar-text '>{time}</li>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +42,7 @@ function MyNavBar(){
             <a className="nav-link" href="https://docs.google.com/spreadsheets/d/1JXTteiB8iCNR3QFX2hzLyxUM1_W3JmNnns1PlDxgMqk/edit#gid=1082397962">Sheets</a>
           </li>
         </ul>
-        
+        <li id='time' className='navbar-text '>{time}</li>
       </div>
     </nav>
     )
